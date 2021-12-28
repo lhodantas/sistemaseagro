@@ -32,4 +32,10 @@ Arquivo sistema.sql -> ja tem o administrador cadastrado (login: admin senha: mu
   /view/index.php
   /view/login.php
   /view/programacao.php
+  
+/opcoes/Usuario/teste_cpf.php
+- página em que o usuário digita cpf para ver se já realizou o cadastro ou não.
+
+/opcoes/Usuario/adicionar_usuario.php
+- pagina de cadastro do usuário. (nome, email e cpf)
 
