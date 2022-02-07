@@ -1,3 +1,4 @@
+
 <center>
   <div class="container col-md-5" >
     <?php
@@ -29,7 +30,7 @@
       <div class="input-group mb-3 justify-content-center">
         <div class="input-group-prepend">
           <span class="input-group-text" id="basic-addon1">
-            <ion-icon name="person-circle-outline"></ion-icon>
+          <i class="fa fa-envelope" aria-hidden="true"></i>
           </span>
         </div>
         <input type="text" class="form-control col-md-6" name="email" id="user" placeholder="E-mail" aria-label="Username" aria-describedby="basic-addon1" required>
@@ -38,18 +39,18 @@
       <div class="input-group mb-3 justify-content-center">
         <div class="input-group-prepend">
           <span class="input-group-text" id="basic-addon2">
-            <ion-icon name="lock-closed-outline"></ion-icon>
+          <i class="fa fa-unlock-alt" aria-hidden="true"></i>
           </span>
         </div>
         <input type="text" class="form-control col-md-6" name="cpf" maxlength="11" id="senha" placeholder="CPF apenas números" aria-label="Password" aria-describedby="basic-addon2" required>
       </div>
 
-      <button class="btn btn-success btn-block col-md-6" type="submit" id="btnLogin">Refatorar</button>
+      <button class="btn btn-success btn-block col-md-6" type="submit" id="btnLogin" style="display: block; margin-top: 10px;">Refatorar</button>
 
     </form>
 
     <a href=<?php echo BASEURL ?>>
-      <button class="btn btn-danger btn-block col-md-6 center" id="btnCancel">Voltar</button>
+      <button class="btn btn-danger btn-block col-md-6 center" id="btnCancel" style="display: block; margin-top: 10px;margin-bottom: 40px">Voltar</button>
     </a>
   </div>
 

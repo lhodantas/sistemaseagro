@@ -1,11 +1,13 @@
+<link href="./estilos/style.css" rel="stylesheet" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 <div class="container text-dark font-weight-bold" >
   <br>
-	<div class="container">
+	<div>
 		<?php
 			if (!empty($_SESSION['type'])) {
 		?>
-		<div class="alert alert-<?php echo $_SESSION['type']; ?> alert-dismissible" role="alert">
-			<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		<div class="alert alert-<?php echo $_SESSION['type']; ?> alert-dismissible" role="alert" style="border: none;width: 100%;">
+			<button style="border-radius: 100px; width: 30px; height:30px; border: 1px solid #ccc" type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">x</span></button>
 			<?php
 				if(!empty($_SESSION['msgId']))
 					echo $_SESSION['msgId'].'<br>';
@@ -25,33 +27,26 @@
 
 		<?php } ?>
 	</div>
-<h2>Novo Usuario</h2>
-	<form action="?page=usuario_save" method="post">
+	<h2 style="padding-top: 20px;padding-left:10%;padding-right:10%;">Novo Usuário</h2>
+	<hr style="margin-left:10%;margin-right:10%;" />	<!-- linha de separação -->
+	<form action="?page=usuario_save" method="post" style="margin: 0 10%;">
 
-	<!-- area de campos do form -->
-	<hr/>	<!-- linha de separação -->
-		<div class="row">
-			<div class="form-group col-md-10">
-				<label for="nome">Nome:</label>
-				<input type="text" class="form-control" name="nome" required>
-			</div>
+		<!-- area de campos do form -->
+		
+		<div class="form-wrap" style="padding-top: 5px;">
+			<!-- <label for="nome">Nome:</label> -->
+			<input type="text" placeholder="Nome" name="nome" required>
+			<!-- <label for="cpf">CPF (apenas números):</label> -->
+			<input type="text" placeholder="CPF (apenas números)" onkeypress="if (!isNaN(String.fromCharCode(window.event.keyCode))) return true; else return false;" name="cpf" maxlength="11" required>
+			<!-- <label for="email">E-mail:</label> -->
+			<input type="email" placeholder="E-mail" name="email" style="margin-top: 18px;" required>
+		</div>	
+
+		<div id="actions" class="actions-container" style="padding: 30px 0">
+				<button type="submit" class="btn-salvar btao-form">Salvar</button>
+				<a href="index.php" class="btn-voltar btao-form">Voltar</a>
 		</div>
-		<div class="row">
-			<div class="form-group col-md-3">
-				<label for="nome">CPF (apenas números):</label>
-				<input type="text" class="form-control" onkeypress="if (!isNaN(String.fromCharCode(window.event.keyCode))) return true; else return false;" name="cpf" maxlength="11" required>
-			</div>
-			<div class="form-group col-md-7">
-				<label for="nome">E-mail:</label>
-				<input type="email" class="form-control"  name="email" required>
-			</div>
-		</div>
-		<div id="actions" class="row">
-			<div class="col-md-12">
-				<button type="submit" class="btn btn-primary">Salvar</button>
-				<a href="index.php" class="btn btn-default">Voltar</a>
-			</div>
-		</div>
+
 	</form>
 
 </div>

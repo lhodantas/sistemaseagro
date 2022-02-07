@@ -5,7 +5,7 @@ if ( !defined('ABSPATH') )
 
 /** caminho no server para o sistema **/
 if ( !defined('BASEURL') )
-	define('BASEURL', '/_seagro/');
+	define('BASEURL', '/certificado/');
 
 /** caminho do arquivo de banco de dados **/
 if ( !defined('DBAPI') )

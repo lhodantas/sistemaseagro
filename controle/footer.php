@@ -1,13 +1,21 @@
-<hr>
-<footer class="container ">
-  <img src="<?php echo BASEURL; ?>imagens/rodape.png" width="100%" class="mx-auto d-block">
-  <p class=" text-center" style="font-size: 11px"> Desenvolvido por: <br>Prof. Marlom Marsal Marques - IFMS Campus Ponta Porã <br>email: marlom.marques@ifms.edu.br</p>
+<link rel="stylesheet" href="./estilos/style.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<footer>
+  <div class="container container-white">
+    <ul>
+      <li><img src="./imagens/logo-branco.png" alt=""></li>
+      <li class="icons-social"><div><span><i class="fab fa-instagram"></i></span><span><i class="fab fa-facebook"></i></span></div>
+      <li class="info"><div><span><i class="fas fa-map-marker-alt"></i>&nbsp&nbsp Majestic Hall</span><span><i class="fas fa-at"></i>&nbsp&nbsp contato@pontaagrotec.com.br</span></div>
+      <li class="imagem-foot"><a href="#"><img src="./imagens/IFMS-PP.png" alt=""></a></li>
+      <li class="imagem-foot"><a href="https://risemkt.com.br"><img src="./imagens/RISE.png" alt=""></a></li>
+    </ul>
+  </div><!--container-white-->
 </footer>
-<script src="<?php echo BASEURL; ?>cdn/jquery/dist/jquery.slim.js"></script>
+<script src="cdn/jquery/dist/jquery.slim.js"></script>
 <script src="../cdn/js/jquery-ui.js" type="text/javascript"></script>
-<script src="<?php echo BASEURL; ?>cdn/popper.js/dist/popper.js"></script>
-<script src="<?php echo BASEURL; ?>cdn/js/bootstrap.js"></script>
-</main> <!-- /container -->
+<script src="cdn/popper.js/dist/popper.js"></script>
+<script src="cdn/js/bootstrap.js"></script>
+</main> 
 </div>
 </div>
 </body>

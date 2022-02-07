@@ -1,9 +1,11 @@
+
+
 <script>
 function desativar(el1) {
   document.getElementById(el1).style.display = 'none';
 }
 function mudarEstado(el1) {
-  var display = document.getElementById(el1).style.display;
+  var display = document.getElemenById(el1).style.display;
   if(display == "none"){
     document.getElementById(el1).style.display = 'block';
   }else{
@@ -15,6 +17,8 @@ window.onload=function(){
 
 }
 </script>
+
+
 <?php
 require_once ABSPATH.'model/usuario.php';
 require_once ABSPATH.'model/participante.php';
@@ -22,6 +26,7 @@ require_once ABSPATH.'opcoes/Turma/gridTurmas.php';
 require_once ABSPATH.'controle/turmas.php';
 require_once ABSPATH.'model/turno.php';
 
+// Teste Teste Teste Teste
 
 $usuario = unserialize($_SESSION['usuario']);
 $participante = new Participante();

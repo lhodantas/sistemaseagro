@@ -1,0 +1,45 @@
+h3{
+    padding-top: 40px;
+}
+
+input[type=text], input[type=password]{
+    margin-top: 20px;
+}
+
+.login-box span{
+    margin-top: 20px;
+    height: 40px;
+    width: 40px;
+}
+
+.input-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    margin-top:18px;
+}
+.icon-wrap{
+    position: relative;
+    width: 3.5%;
+    border: 1px solid rgb(224, 224, 224);
+    background-color: #f3f3f3;
+}
+.input-icon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+/* MOBILE */
+@media only screen and (max-width: 600px) {
+
+    .icon-wrap{
+        width: 10%;
+    }
+    button{
+        width: 60%;
+    }
+
+}

@@ -1,0 +1,200 @@
+/*ESTILOS GERAIS*/
+@import 'footer.css';
+@import 'header.css';
+@import 'login.css';
+@import 'inscricao.css';
+
+
+*{margin: 0;padding: 0;box-sizing: border-box;}
+
+html, body{height: 100%;}
+
+a{text-decoration: none;}
+
+ul{list-style-type: none;}
+
+
+/*div da seção inteira do site*/
+.main-div{
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.row{
+    display: block;
+}
+
+/*Texto página incial*/
+.container{
+    width: 90%;
+
+}
+.container-main-text{
+    margin: 0 auto;
+    display: block;
+}
+
+.container-main-text > p{
+    margin-top: 30px;
+}
+
+.container-main-text .info-main, .container .info-reception{
+    background-color: #009c2f;
+    width: 100%;
+    text-align: center;
+    letter-spacing: 1px;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    padding-top: 10px;
+    padding-bottom: 1px;
+}
+
+/*CONTEUDO PÁGINA PRINCIPAL - VÍDEO E TEXTO*/
+.container .main-video{
+    flex: 1;
+    margin: 40px auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.container .main-video p{
+    flex: 60%;
+    padding-left: 40px;
+    text-align: justify;
+}
+
+
+
+/*****************************MENU LATERAL********************************/
+/*MENU LATERAL - DESKTOP*/
+.main-div .row #menu-lateral{
+    background-color: black;
+    width: 23%;
+}
+
+#menu-lateral .justify-content-between{
+    margin-left: 30px;
+    margin-top: 20px;
+    display: flex;
+    align-content: center;
+}
+
+#collapsibleNavbarAdmin h5{
+    letter-spacing: 1px;
+}
+
+/*MENU LATERAL - MOBILE*/
+@media screen and (max-width: 780px){
+    .main-div .row #menu-lateral{
+        width: 100%;
+
+    }
+}
+/*************************************************************************/
+
+/*Página programação*/
+.programacao{
+    display: flex;
+    height: 600px;
+    width: 100%;
+   margin: 0 auto;
+   padding: 50px 0;
+   justify-content: space-around;
+}
+
+.programacao-item{
+    height: 450px;
+    width: 30%;
+    border-radius:5px;
+    box-shadow: 1px 1px 2px 1px rgb(224, 224, 224);
+    padding: 15px 20px;
+    transition: all 0.4s;
+    background-color: #eeeeee;
+}
+
+.programacao-item:hover{
+    transform:scale(1.05,1.05);
+}
+
+.programacao-item h1, h2, h3, h4, h5, h6{
+    padding: 5px 0;
+}
+
+/*tooltip alerta para realização de cadastro*/
+
+/*CONFIGURAÇÕES GERAIS - MOBILE*/
+@media screen and (max-width: 780px){
+    .container{
+        width: 100%;
+    }
+    .container .main-video{
+        flex-direction: column;
+    }
+
+    .container .main-video iframe{
+        width: 100%;
+    }
+    .container .main-video p{
+        padding: 40px 0;
+    }
+    .programacao{
+        flex-direction: column;
+        height: auto;
+    }
+    .programacao-item{
+        margin-top: 30px;
+        width: 100%;
+    }
+}
+
+/*ESTILOS DOS FORMS*/
+.form-wrap{
+    display:flex;
+    align-content:center;
+    flex-direction:column;
+}
+input{
+    width: 100%;
+    align-self: center;
+    background-color: #E5E5E5;
+    padding: 12px;
+    border-width: 0;
+    margin: 0 auto;
+}
+.actions-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+}
+.btao-form{
+    width: 50%;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    padding: 8px;
+    border-width: 0;
+    border-radius: 4px;
+    font-weight: 600;
+    transition: all 0.4s;
+}
+.btn-salvar{
+    background-color: #018543;
+    margin-right: 2%;
+}
+.btn-voltar{
+    background-color: #DC3545;
+    margin-left: 2%;
+}
+.btn-salvar:hover{
+    background-color: #00753b;
+    color: #dedede;
+}
+.btn-voltar:hover{
+    background-color: #b42a38;
+    color: #dedede;
+}

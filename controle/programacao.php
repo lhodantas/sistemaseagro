@@ -1,3 +1,4 @@
+<link href="./estilos/style.css" rel="stylesheet">
 <?php
 require_once ABSPATH.'model/programacao.php';
 require_once ABSPATH.'model/participante.php';
