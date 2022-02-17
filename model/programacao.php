@@ -47,6 +47,12 @@ require_once DBAPI;
     $parametros = array($atividade,$participante);
     return $this->selectDB($sql,$parametros);
   }
+  
+  function numeroInscritos($atividade){
+    $sql = "select count(fk_data_atividade) as total from data_atividade_participante where fk_data_atividade = ?;";
+    $parametros = array($atividade);
+    return $this->selectDB($sql,$parametros);
+  }
 
 }
 
