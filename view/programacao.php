@@ -140,13 +140,17 @@ while(isset($programacoes[$i])){
          <?php
             $total = count($palestrantes);
             foreach($palestrantes as $indice => $palestrante){
-                if($total<3){
+                if($total==1){
           ?>
-          <img class="rounded-circle" style="width:170px; height: 150px; border-radius: 100%;margin: 0 auto"  src="<?php echo $palestrante->foto; ?>"><br>
+          <img class="rounded-circle" style="width:40%; height: 40%; border-radius: 100%;margin: 0 auto"  src="<?php echo $palestrante->foto; ?>"><br>
+          <?php
+            }else if($total==2){
+            ?>
+            <img class="rounded-circle" style="width:37%; height: 37%; border-radius: 100%;margin: 0 auto"  src="<?php echo $palestrante->foto; ?>"><br>
           <?php
             }else{
             ?>
-            <img class="rounded-circle" style="width:120px; height: 100px; border-radius: 100%;margin: 0 auto"  src="<?php echo $palestrante->foto; ?>"><br>
+            <img class="rounded-circle" style="width:33%; height: 33%; border-radius: 100%;margin: 0 auto"  src="<?php echo $palestrante->foto; ?>"><br>
             <?php
             }
             }
@@ -255,17 +259,21 @@ while(isset($programacoes[$i])){
         <?php
           }
         ?>
-        <div class="row align-items-center" >
+         <div class="row align-items-center" >
          <?php
             $total = count($palestrantes);
             foreach($palestrantes as $indice => $palestrante){
-                if($total<3){
+                if($total==1){
           ?>
-          <img class="rounded-circle" style="width:170px; height: 150px; border-radius: 100%;margin: 0 auto"  src="<?php echo $palestrante->foto; ?>"><br>
+        <img class="rounded-circle" style="width:40%; height: 40%; border-radius: 100%;margin: 0 auto"  src="<?php echo $palestrante->foto; ?>"><br>
+          <?php
+            }else if($total==2){
+            ?>
+            <img class="rounded-circle" style="width:37%; height: 37%; border-radius: 100%;margin: 0 auto"  src="<?php echo $palestrante->foto; ?>"><br>
           <?php
             }else{
             ?>
-            <img class="rounded-circle" style="width:120px; height: 100px; border-radius: 100%;margin: 0 auto"  src="<?php echo $palestrante->foto; ?>"><br>
+            <img class="rounded-circle" style="width:33%; height: 33%; border-radius: 100%;margin: 0 auto"  src="<?php echo $palestrante->foto; ?>"><br>
             <?php
             }
             }
@@ -375,17 +383,21 @@ while(isset($programacoes[$i])){
         <?php
           }
         ?>
-        <div class="row align-items-center" >
-          <?php
+         <div class="row align-items-center" >
+         <?php
             $total = count($palestrantes);
             foreach($palestrantes as $indice => $palestrante){
-                if($total<3){
+                if($total==1){
           ?>
-          <img class="rounded-circle" style="width:170px; height: 150px; border-radius: 100%;margin: 0 auto"  src="<?php echo $palestrante->foto; ?>"><br>
+          <img class="rounded-circle" style="width:40%; height: 40%; border-radius: 100%;margin: 0 auto"  src="<?php echo $palestrante->foto; ?>"><br>
+          <?php
+            }else if($total==2){
+            ?>
+            <img class="rounded-circle" style="width:37%; height: 37%; border-radius: 100%;margin: 0 auto"  src="<?php echo $palestrante->foto; ?>"><br>
           <?php
             }else{
             ?>
-            <img class="rounded-circle" style="width:120px; height: 100px; border-radius: 100%;margin: 0 auto"  src="<?php echo $palestrante->foto; ?>"><br>
+            <img class="rounded-circle" style="width:33%; height: 33%; border-radius: 100%;margin: 0 auto"  src="<?php echo $palestrante->foto; ?>"><br>
             <?php
             }
             }
